@@ -338,7 +338,7 @@ const int32 op_table[64] = {
     0,                                                  /* illegal */
     0,                                                  /* illegal */
     0,                                                  /* 20: illegal */
-    L1 | L4 | L7 | BREQ | NOWM,                         /* clear storage */
+    L1 | L4 | L7 | BREQ,                         /* clear storage */
     L1 | L4 | L7 | AREQ | BREQ,                         /* subtract */
     0,                                                  /* illegal */
     L5 | IO,                                            /* magtape */
@@ -348,7 +348,7 @@ const int32 op_table[64] = {
     L1 | L4 | L7 | AREQ | BREQ,                         /* 30: move zones */
     L1 | L4 | L7 | AREQ | BREQ,                         /* move supress zero */
     0,                                                  /* illegal */
-    L1 | L4 | L7 | AREQ | BREQ | NOWM,                  /* set word mark */
+    L1 | L4 | L7 | AREQ | BREQ,                  /* set word mark */
     L1 | L4 | L7 | AREQ | BREQ | MDV,                   /* divide */
     0,                                                  /* illegal */
     0,                                                  /* illegal */
