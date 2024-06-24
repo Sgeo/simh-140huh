@@ -637,8 +637,6 @@ while (reason == 0) {                                   /* loop until halted */
 
     if ((t = M[IS]) & WM)                               /* I-4: WM? 4 char inst */
         goto CHECK_LENGTH;
-    if ((op == OP_B) && (t == BCD_BLANK))               /* BR + space? */
-         goto CHECK_LENGTH;
     D = t;                                              /* could be D char */
     BS = hun_table[t];                                  /* could be B addr */
     PP (IS);
